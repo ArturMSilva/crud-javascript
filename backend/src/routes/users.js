@@ -3,12 +3,12 @@ import { addUser, deleteUser, getUsers, updateUser } from "../controllers/user-c
 
 const router = express.Router()
 
-router.get("/", getUsers)
+router.get("/get-users", getUsers)
 
-router.post("/", addUser)
+router.post("/add-user", addUser)
 
-router.put("/:id", updateUser)
+router.put("/update-user/:id", updateUser)
 
-router.delete("/:id", deleteUser)
+router.delete("/delete-user/:id", deleteUser)
 
 export default router
